@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FleetHub — Pengelolaan Aset Kendaraan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-mark">// FLEET</div>
+      <div class="logo-name">FleetHub</div>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="index.html" class="active">Daftar Kendaraan</a></li>
+      <li><a href="#">Task Maintenance</a></li>
+      <li><a href="#">Jadwal Servis</a></li>
+      <li><a href="#">Riwayat Penggunaan</a></li>
+      <li><a href="#">Laporan</a></li>
+      <li><a href="#">Pengaturan</a></li>
+    </ul>
+    <div class="sidebar-footer">v2.5.0 — April 2026</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-title"><span>FleetHub</span> / Semua Kendaraan</div>
+      <div class="topbar-actions">
+        <a href="#" class="btn btn-ghost">Filter</a>
+        <a href="#" class="btn btn-primary">+ Tambah Kendaraan</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-header">
+        <div>
+          <h1>Pengelolaan Aset Kendaraan</h1>
+          <p>Monitor seluruh armada kendaraan perusahaan Anda secara real-time.</p>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-label">Total Kendaraan</div>
+          <div class="stat-value">28</div>
+          <div class="stat-sub">unit</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Tersedia</div>
+          <div class="stat-value" style="color: var(--low)">18</div>
+          <div class="stat-sub">siap digunakan</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Sedang Dipakai</div>
+          <div class="stat-value" style="color: var(--accent)">7</div>
+          <div class="stat-sub">unit</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Dalam Servis</div>
+          <div class="stat-value" style="color: var(--med)">3</div>
+          <div class="stat-sub">unit</div>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="table-wrap">
+        <div class="table-header">
+          <div class="t-title">
+            Daftar Kendaraan
+            <span class="count-badge">28 items</span>
+          </div>
+          <a href="#" class="btn btn-ghost">Export CSV</a>
+        </div>
+
+
+  <table>
+    <thead>
+  <tr>
+    <th>#</th>
+    <th>Plat Nomor</th>
+    <th>Merk / Model</th>
+    <th>Jenis</th>
+    <th>Tahun</th>
+    <th>Kilometer</th>
+    <th>Lokasi</th>
+    <th>Status</th>
+    <th>Aksi</th>
+  </tr>
+</thead>
+ <tbody>
+  <!-- Kendaraan 1 -->
+  <tr>
+    <td>01</td>
+    <td>B 1234 ABC</td>
+    <td>
+      <strong>Toyota Fortuner</strong><br>
+      <small>VRZ 4x2 • SUV</small>
+    </td>
+    <td>Mobil</td>
+    <td>2022</td>
+    <td>87.450 km</td>
+    <td>Jakarta Selatan</td>
+    <td class="status-available">Tersedia</td>
+    <td>
+      <a href="detail.html?id=1">Detail</a>
+      <button>Edit</button>
+      <button>Hapus</button>
+    </td>
+  </tr>
+
+  <!-- Kendaraan 2 -->
+  <tr>
+    <td>02</td>
+    <td>B 5678 DEF</td>
+    <td>
+      <strong>Honda Vario 160</strong><br>
+      <small>ABS • Scooter</small>
+    </td>
+    <td>Motor</td>
+    <td>2023</td>
+    <td>12.340 km</td>
+    <td>Depok</td>
+    <td class="status-inuse">Dipakai</td>
+    <td>
+      <a href="detail.html?id=2">Detail</a>
+      <button>Edit</button>
+      <button>Hapus</button>
+    </td>
+  </tr>
+
+  <!-- Kendaraan 3 -->
+  <tr>
+    <td>03</td>
+    <td>B 9101 GHI</td>
+    <td>
+      <strong>Mitsubishi Pajero Sport</strong><br>
+      <small>Dakar 4x4 • SUV</small>
+    </td>
+    <td>Mobil</td>
+    <td>2021</td>
+    <td>124.780 km</td>
+    <td>Bekasi</td>
+    <td class="status-service">Servis</td>
+    <td>
+      <a href="detail.html?id=3">Detail</a>
+      <button>Edit</button>
+      <button>Hapus</button>
+    </td>
+  </tr>
+
+  <!-- Kendaraan 4 -->
+  <tr>
+    <td>04</td>
+    <td>B 4455 KLM</td>
+    <td>
+      <strong>Suzuki Ertiga</strong><br>
+      <small>Hybrid GX • MPV</small>
+    </td>
+    <td>Mobil</td>
+    <td>2024</td>
+    <td>8.920 km</td>
+    <td>Bogor</td>
+    <td class="status-available">Tersedia</td>
+    <td>
+      <a href="detail.html?id=4">Detail</a>
+      <button>Edit</button>
+      <button>Hapus</button>
+    </td>
+  </tr>
+
+  <!-- Kendaraan 5 -->
+  <tr>
+    <td>05</td>
+    <td>B 7788 NOP</td>
+    <td>
+      <strong>Yamaha NMAX 155</strong><br>
+      <small>Connected • Maxi Scooter</small>
+    </td>
+    <td>Motor</td>
+    <td>2023</td>
+    <td>18.650 km</td>
+    <td>Tangerang</td>
+    <td class="status-inuse">Dipakai</td>
+    <td>
+      <a href="detail.html?id=5">Detail</a>
+      <button>Edit</button>
+      <button>Hapus</button>
+    </td>
+  </tr>
+
+  <!-- Kendaraan 6 -->
+  <tr>
+    <td>06</td>
+    <td>B 3344 QRS</td>
+    <td>
+      <strong>Isuzu Elf</strong><br>
+      <small>Minibus • Box</small>
+    </td>
+    <td>Mobil</td>
+    <td>2020</td>
+    <td>156.200 km</td>
+    <td>Jakarta Timur</td>
+    <td class="status-service">Servis</td>
+    <td>
+      <a href="detail.html?id=6">Detail</a>
+      <button>Edit</button>
+      <button>Hapus</button>
+    </td>
+  </tr>
+</tbody>

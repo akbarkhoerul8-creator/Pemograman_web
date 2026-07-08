@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Kendaraan — B 1234 ABC | FleetHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-mark">// FLEET</div>
+      <div class="logo-name">FleetHub</div>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="index.html">Daftar Kendaraan</a></li>
+      <li><a href="#">Task Maintenance</a></li>
+      <li><a href="#">Jadwal Servis</a></li>
+      <li><a href="#">Riwayat Penggunaan</a></li>
+      <li><a href="#">Laporan</a></li>
+      <li><a href="#">Pengaturan</a></li>
+    </ul>
+    <div class="sidebar-footer">v2.5.0 — April 2026</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-title"><span>FleetHub</span> / Detail Kendaraan / B 1234 ABC</div>
+      <div class="topbar-actions">
+        <button class="btn btn-ghost">Edit Data</button>
+        <button class="btn btn-primary">Update Status</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <a href="index.html" class="back-link">← Kembali ke Daftar Kendaraan</a>
+
+      <div class="detail-hero">
+        <div class="detail-hero-left">
+          <div class="priority priority-high">B 1234 ABC</div>
+          <h1>Toyota Fortuner VRZ 4x2</h1>
+          <div class="hero-meta">
+            <span class="client-tag">Mobil SUV</span>
+            <span class="client-tag" style="border-color: var(--low); color: var(--low);">Tersedia</span>
+          </div>
+        </div>
+        <div class="detail-hero-right">
+          <div class="deadline-label">Tahun Produksi</div>
+          <div class="deadline-value">2022</div>
+        </div>
+      </div>
+
+      <div class="detail-grid">
+        <!-- Kolom Kiri -->
+        <div class="detail-col">
+          <!-- Spesifikasi Teknis -->
+          <div class="card">
+            <div class="card-head">
+              <span class="card-icon">⚙️</span>
+              <h2>Spesifikasi Teknis</h2>
+            </div>
+            <div class="card-body">
+              <p><strong>Nomor Rangka (VIN):</strong> MHFC3B2S0N0123456</p>
+              <p><strong>Nomor Mesin:</strong> 2GD-FTV 2393 cc</p>
+              <p><strong>Tipe Mesin:</strong> Diesel 4 Silinder Turbo</p>
+              <p><strong>Transmisi:</strong> Otomatis 6-Speed</p>
+              <p><strong>Warna:</strong> Attitude Black</p>
+              <p><strong>Kapasitas Tangki:</strong> 80 Liter</p>
+            </div>
+          </div>
+
+          <!-- Jadwal Pajak & Dokumen -->
+          <div class="card">
+            <div class="card-head">
+              <span class="card-icon">📅</span>
+              <h2>Jadwal Pajak & Dokumen</h2>
+            </div>
+            <div class="card-body">
+              <ul class="task-list">
+                <li class="task-item">
+                  <div class="task-info">
+                    <div class="task-name">Pajak Tahunan</div>
+                    <div class="task-meta">Berlaku hingga: 12 Mei 2027</div>
+                  </div>
+                  <span class="task-status ts-done">Valid</span>
+                </li>
+                <li class="task-item">
+                  <div class="task-info">
+                    <div class="task-name">STNK</div>
+                    <div class="task-meta">Terakhir diperbarui: 15 Mar 2026</div>
+                  </div>
+                  <span class="task-status ts-done">Valid</span>
+                </li>
+                <li class="task-item">
+                  <div class="task-info">
+                    <div class="task-name">Asuransi All Risk</div>
+                    <div class="task-meta">Berlaku hingga: 20 Jan 2027</div>
+                  </div>
+                  <span class="task-status ts-ongoing">Aktif</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan -->
+        <div class="detail-col">
+          <!-- Riwayat Servis -->
+          <div class="card">
+            <div class="card-head">
+              <span class="card-icon">🔧</span>
+              <h2>Riwayat Servis Terakhir</h2>
+            </div>
+            <div class="card-body">
+              <div class="timeline">
+                <div class="tl-item">
+                  <div class="tl-dot done"></div>
+                  <div class="tl-content">
+                    <div class="tl-date">18 April 2026</div>
+                    <div class="tl-event">Servis Rutin 40.000 km</div>
+                    <div class="tl-desc">Ganti oli, filter, dan pemeriksaan rem</div>
+                  </div>
+                </div>
+                <div class="tl-item">
+                  <div class="tl-dot"></div>
+                  <div class="tl-content">
+                    <div class="tl-date">12 Februari 2026</div>
+                    <div class="tl-event">Penggantian Ban Depan</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pengemudi Terakhir -->
+          <div class="card">
+            <div class="card-head">
+              <span class="card-icon">👤</span>
+              <h2>Pengemudi Terakhir</h2>
+            </div>
+            <div class="card-body">
+              <div class="team-item">
+                <div class="avatar" style="background: #e0f2fe; color: #0369a1;">RA</div>
+                <div class="member-info">
+                  <div class="member-name">Rizki Aditya</div>
+                  <div class="member-role">Marketing Manager • Dipakai sejak 20 Apr 2026</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
