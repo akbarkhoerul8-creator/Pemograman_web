@@ -1,0 +1,6 @@
+# Blokir eksekusi PHP di folder uploads
+php_flag engine off
+<FilesMatch "\.(php|phtml|php3|php4|php5|phps)$">
+Order Deny,Allow
+Deny from all
+</FilesMatch>
